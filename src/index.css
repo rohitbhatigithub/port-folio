@@ -1,0 +1,24 @@
+/* Import Tailwind CSS Styles */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* General Style Settings */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0a192f;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+}
+
+/* Code Element Styling */
+code {
+    font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
