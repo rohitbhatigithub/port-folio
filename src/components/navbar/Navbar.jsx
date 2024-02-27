@@ -10,11 +10,9 @@ const Navbar = ({ nav, hendlenavIcon }) => {
         <>
             <div className="fixed flex items-center justify-between w-full  px-4 bg-[#142032] z-30 py-2">
                 {/* portfolio logo */}
-                <div className="text-pink-600 text-4xl italic font-semibold pt-6 border-b-4 border-pink-600">
-                    Portfolio
-                </div>
+                <div className="text-pink-600 text-4xl italic font-semibold pt-6 border-b-4 border-pink-600"></div>
                 {/* menu items */}
-                <div className="hidden md:block text-white">
+                <div className="hidden md:block text-white h-[3rem] mt-5">
                     <ul className="flex items-center gap-6 text-xl font-medium">
                         <li
                             // onClick={activeLink}

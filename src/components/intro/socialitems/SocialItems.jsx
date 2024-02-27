@@ -5,7 +5,7 @@ const SocialItems = () => {
         window.open("/res.pdf", "_blank");
     };
     return (
-        <div className="hidden  md:block fixed top-[20rem]">
+        <div className="hidden  md:block fixed top-[12rem]">
             <div className=" flex items-center justify-between absolute left-[-5rem] top-[1rem]  cursor-pointer hover:left-[0.5rem] duration-300">
                 <div className="text-white text-xl">
                     <a
