@@ -1,6 +1,23 @@
 import React from "react";
-
-const Work = () => {
+import Img1 from "../../assets/projectPic/pic1.png";
+import Img2 from "../../assets/projectPic/pic2.png";
+import Img3 from "../../assets/projectPic/pic3.png";
+import Img4 from "../../assets/projectPic/pic4.png";
+import Img5 from "../../assets/projectPic/pic5.png";
+import Img6 from "../../assets/projectPic/pic6.png";
+import Img7 from "../../assets/projectPic/pic7.png";
+import hal1 from "../../assets/hal project//hal1.jpg";
+import hal2 from "../../assets/hal project//hal2.jpg";
+import hal3 from "../../assets/hal project//hal3.jpg";
+const Work = ({ togglePopup }) => {
+    const handleViewTeamMaster = () => {
+        const teamMasterImages = [Img1, Img2, Img3, Img4, Img5, Img6, Img7];
+        togglePopup(teamMasterImages);
+    };
+    const hendleHalProjectPics = () => {
+        const HalProjectImages = [hal1, hal2, hal3];
+        togglePopup(HalProjectImages);
+    };
     return (
         <div id="work" className="min-h-screen pt-[8rem]">
             <div className="  flex justify-center items-center">
@@ -26,7 +43,7 @@ const Work = () => {
                 <br></br> */}
                 <div className="flex justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4">
                     <div className="text-base font-medium md:text-4xl  text-[#ccd6f6] md:flex-1 md:font-bold">
-                        Hal App
+                        Team Master Pro
                     </div>
                     <div className="text-xs pr-4 text-[#ccd6f6] md:flex-1  text-justify md:text-xl">
                         <div className="flex items-center justify-between gap-1 ">
@@ -34,10 +51,52 @@ const Work = () => {
                                 Technology:{" "}
                             </div>
                             <div className="text-xs md:text-xl pr-5">
-                                Html,Tailwind,<br></br>Sass,Reactjs
+                                Html, Tailwind,<br></br>Sass, React, Router,etc.
                             </div>
                         </div>
                         <br></br>
+                        Dynamic and innovative professional adept at leveraging
+                        modern technology to streamline fantasy sports team
+                        creation across various platforms. With expertise in
+                        crafting winning strategies and utilizing data analysis,
+                        I have developed a cutting-edge app, CleanSweep Fantasy
+                        Team & Guide, catering to the needs of fantasy sports
+                        enthusiasts.
+                        <br></br>
+                        <br></br>
+                        <div className="flex justify-between items-center">
+                            <a
+                                className="text-blue-600 text-base px-8 md:text-2xl border md:px-10 rounded-xl hover:text-white "
+                                href="https://play.google.com/store/apps/details?id=com.logikdot.teammasterpro"
+                                target="blank"
+                            >
+                                Link
+                            </a>
+
+                            <div
+                                className="text-blue-600 text-base px-8 md:text-2xl border md:px-10 rounded-xl hover:text-white cursor-pointer"
+                                onClick={handleViewTeamMaster}
+                            >
+                                View
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+                <br></br>
+                <div className="flex justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4">
+                    <div className="text-base font-medium md:text-4xl  text-[#ccd6f6] md:flex-1 md:font-bold">
+                        Hal
+                    </div>
+                    <div className="text-xs pr-4 text-[#ccd6f6] md:flex-1 md:tracking-widest text-justifytext-[#ccd6f6]  text-justify md:text-xl">
+                        <div className="flex items-center justify-between gap-1 mb-4 ">
+                            <div className="text-sm md:text-2xl">
+                                Technology:{" "}
+                            </div>
+                            <div className="text-xs md:text-xl ">
+                                Html,Css,<br></br>Javascript,Reactjs,Tailwind
+                            </div>
+                        </div>
                         HAL, a part of OJAS AEROSPACE Pvt. Ltd., works on the
                         principle of maximum output from minimum input. A B2C
                         and a B2B company with a vision of employment generation
@@ -47,64 +106,32 @@ const Work = () => {
                         needs. Crop Monitoring with the help of drones and using
                         its high-quality images on various parameters, farmers
                         are advised on different aspects be it Crop Protection,
-                        Irrigation etc.
-                        <br></br>
-                        <br></br>
-                        <a
-                            className="text-blue-600 text-base px-8 md:text-2xl border md:px-10 rounded-xl hover:text-white "
-                            href="https://play.google.com/store/apps/details?id=com.kisaanstation.kisaanstation&pcampaignid=web_share"
-                            target="blank"
-                        >
-                            Link
-                        </a>
-                    </div>
-                </div>
-                <br></br>
-                <br></br>
-                <div className="flex justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4">
-                    <div className="text-base font-medium md:text-4xl  text-[#ccd6f6] md:flex-1 md:font-bold">
-                        Movie Web
-                    </div>
-                    <div className="text-xs pr-4 text-[#ccd6f6] md:flex-1 md:tracking-widest text-justifytext-[#ccd6f6]  text-justify md:text-xl">
-                        <div className="flex items-center justify-between gap-1 mb-4 ">
-                            <div className="text-sm md:text-2xl">
-                                Technology:{" "}
-                            </div>
-                            <div className="text-xs md:text-xl ">
-                                Html,Css,<br></br>Javascript,Reactjs
-                            </div>
-                        </div>
-                        Build this app where users search any movie and add one
-                        more feature where users sort movies by rating,name and
-                        year. Fetching data using axios. I have also added
-                        pagination feature in it through which the user can go
-                        from one page to another by clicking button.it has a
-                        total of 10 buttons and 10 movies are visiable at a
-                        time.
+                        Irrigation etc
                         <br></br>
                         <br></br>
                         <div className="flex items-center gap-4 md:justify-between">
                             <a
                                 className="text-blue-600 text-base px-4 md:text-2xl border md:px-10 rounded-xl hover:text-white"
-                                href="https://movieclonewebsite.netlify.app"
+                                href="https://play.google.com/store/apps/details?id=com.kisaanstation.kisaanstation&pcampaignid=web_share"
                                 target="blank"
                             >
-                                Demo
+                                Link
                             </a>
 
-                            <a
-                                className="text-blue-600 text-base px-4 md:text-2xl border md:px-10 rounded-xl hover:text-white"
-                                href="https://github.com/rohitbhatigithub/MovieApp"
-                                target="blank"
+                            <div
+                                className="text-blue-600 text-base px-4
+                                md:text-2xl border md:px-10 rounded-xl
+                                hover:text-white"
+                                onClick={hendleHalProjectPics}
                             >
-                                Code
-                            </a>
+                                View
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="flex justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4 pt-6">
                     <div className="text-base font-medium md:text-4xl  text-[#ccd6f6] md:flex-1 md:font-bold">
-                        Ecommerce Cart Web
+                        Jax
                     </div>
                     <div className="text-xs pr-4 text-[#ccd6f6] md:flex-1 md:tracking-widest  text-justify md:text-xl">
                         <div className="flex items-center justify-between gap-1  mb-4 ">
@@ -112,38 +139,26 @@ const Work = () => {
                                 Technology:{" "}
                             </div>
                             <div className="text-xs md:text-xl pr-5">
-                                Html,Css,React
+                                Html,Css,React,Tailwind
                             </div>
                         </div>
-                        It is a Ecommerce web, where user search items. user can
-                        cart any items and increse any items quentity. if user
-                        buy any item so user fill demo card details.
+                        Experienced in developing and managing a trading
+                        application designed to empower users to make informed
+                        decisions based on signals provided by an admin. Skilled
+                        in creating seamless user experiences within the realm
+                        of financial technology, I have contributed to the
+                        development and deployment of a cutting-edge trading
+                        platform.
                         <br></br>
                         <br></br>
                         <div className="flex items-center gap-4 md:justify-between">
-                            <a
-                                className="text-blue-600 text-base px-4 md:text-2xl border md:px-10 rounded-xl hover:text-white"
-                                href="https://ecommercecartweb.netlify.app"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Demo
-                            </a>
-
-                            <a
-                                className="text-blue-600 text-base px-4 md:text-2xl border md:px-10 rounded-xl hover:text-white"
-                                href="https://github.com/rohitbhatigithub/ecommerce"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Code
-                            </a>
+                            Work in progress....
                         </div>
                     </div>
                 </div>
                 <div className="flex justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4 pt-6">
-                    <div className="text-base font-medium md:text-4xl  text-[#ccd6f6] md:flex-1 md:font-bold">
-                        University Home Page
+                    <div className="text-xs pl-1 font-medium md:text-4xl  text-[#ccd6f6] md:flex-1 md:font-bold">
+                        Gadget
                     </div>
                     <div className="text-xs pr-4 text-[#ccd6f6] md:flex-1 md:tracking-widest   text-justify md:text-xl">
                         <div className="flex items-center justify-between   mb-4 ">
@@ -151,18 +166,23 @@ const Work = () => {
                                 Technology:{" "}
                             </div>
                             <div className="text-xs md:text-xl pr-5">
-                                Html, Css
+                                Html,Css, Aos,React-Icon<br></br>
+                                Javascript,Reactjs,Tailwind
                             </div>
                         </div>
-                        This is a simple university page which I have created
-                        with the help of HTML and CSS. I have also added main
-                        menu and contact details in it.
+                        Dedicated and proficient developer with expertise in
+                        crafting personalized projects within the realm of
+                        e-commerce. Gadget Cart stands as a testament to my
+                        commitment to delivering innovative solutions tailored
+                        to niche markets. Specializing in the realm of gadgets,
+                        this project encapsulates a user-centric e-commerce
+                        platform designed exclusively for gadget enthusiasts.
                         <br></br>
                         <br></br>
                         <div className="flex items-center gap-4 md:justify-between">
                             <a
                                 className="text-blue-600 text-base px-4 md:text-2xl border md:px-10 rounded-xl hover:text-white"
-                                href="https://shimmering-sable-bc3f3f.netlify.app"
+                                href="https://gadget-cart-rohitbhatia.netlify.app/"
                                 target="blank"
                             >
                                 Demo
@@ -170,7 +190,7 @@ const Work = () => {
 
                             <a
                                 className="text-blue-600 text-base px-4 md:text-2xl border md:px-10 rounded-xl hover:text-white"
-                                href="https://github.com/rohitbhatigithub/University"
+                                href="https://github.com/rohitbhatigithub/gadget-cart"
                                 target="blank"
                             >
                                 Code
