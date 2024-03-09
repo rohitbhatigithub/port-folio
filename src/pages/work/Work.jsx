@@ -41,7 +41,7 @@ const Work = ({ togglePopup }) => {
                 </div> */}
                 {/* <br></br>
                 <br></br> */}
-                <div className="flex justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4">
                     <div className="text-base font-medium md:text-4xl  text-[#ccd6f6] md:flex-1 md:font-bold">
                         Team Master Pro
                     </div>
@@ -84,19 +84,20 @@ const Work = ({ togglePopup }) => {
                 </div>
                 <br></br>
                 <br></br>
-                <div className="flex justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4">
                     <div className="text-base font-medium md:text-4xl  text-[#ccd6f6] md:flex-1 md:font-bold">
                         Hal
                     </div>
                     <div className="text-xs pr-4 text-[#ccd6f6] md:flex-1 md:tracking-widest text-justifytext-[#ccd6f6]  text-justify md:text-xl">
-                        <div className="flex items-center justify-between gap-1 mb-4 ">
+                        <div className="flex items-center justify-between gap-1 ">
                             <div className="text-sm md:text-2xl">
                                 Technology:{" "}
                             </div>
-                            <div className="text-xs md:text-xl ">
-                                Html,Css,<br></br>Javascript,Reactjs,Tailwind
+                            <div className="text-xs md:text-xl pr-5">
+                                Html,,css, Tailwind,<br></br>Sass, React
                             </div>
                         </div>
+                        <br></br>
                         HAL, a part of OJAS AEROSPACE Pvt. Ltd., works on the
                         principle of maximum output from minimum input. A B2C
                         and a B2B company with a vision of employment generation
@@ -109,7 +110,7 @@ const Work = ({ togglePopup }) => {
                         Irrigation etc
                         <br></br>
                         <br></br>
-                        <div className="flex items-center gap-4 md:justify-between">
+                        <div className="flex items-center justify-between gap-4 md:justify-between">
                             <a
                                 className="text-blue-600 text-base px-4 md:text-2xl border md:px-10 rounded-xl hover:text-white"
                                 href="https://play.google.com/store/apps/details?id=com.kisaanstation.kisaanstation&pcampaignid=web_share"
@@ -129,7 +130,7 @@ const Work = ({ togglePopup }) => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4 pt-6">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4 pt-6">
                     <div className="text-base font-medium md:text-4xl  text-[#ccd6f6] md:flex-1 md:font-bold">
                         Jax
                     </div>
@@ -151,13 +152,13 @@ const Work = ({ togglePopup }) => {
                         platform.
                         <br></br>
                         <br></br>
-                        <div className="flex items-center gap-4 md:justify-between">
+                        <div className="flex items-center justify-between gap-4 md:justify-between">
                             Work in progress....
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4 pt-6">
-                    <div className="text-xs pl-1 font-medium md:text-4xl  text-[#ccd6f6] md:flex-1 md:font-bold">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:w-[80%] m-auto border-b-2 pb-4 pl-4 pt-6">
+                    <div className="text-base pl-1 font-medium md:text-4xl  text-[#ccd6f6] md:flex-1 md:font-bold">
                         Gadget
                     </div>
                     <div className="text-xs pr-4 text-[#ccd6f6] md:flex-1 md:tracking-widest   text-justify md:text-xl">
@@ -179,7 +180,7 @@ const Work = ({ togglePopup }) => {
                         platform designed exclusively for gadget enthusiasts.
                         <br></br>
                         <br></br>
-                        <div className="flex items-center gap-4 md:justify-between">
+                        <div className="flex items-center gap-4 justify-between">
                             <a
                                 className="text-blue-600 text-base px-4 md:text-2xl border md:px-10 rounded-xl hover:text-white"
                                 href="https://gadget-cart-rohitbhatia.netlify.app/"
